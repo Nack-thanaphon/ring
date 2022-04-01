@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+:root {
+    --main: #8C1113;
+    --second: #ffe457;
+}
+
+nav {
+    background-color: #8C1113;
+}
+
+.login {
+    background: #FFE457;
+    color: #8C1113;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.carousel img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.slick-dots,
+.slick-prev,
+.slick-next,
+.slick-arrow {
+    display: none !important;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: var(--main);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.type:hover {
+    background-color: #ffe457;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .type {
+        margin: 0%;
+        width: 80px;
+        height: 80px;
+    }
+    .type small {
+        font-size: 0.6rem;
+    }
+    .type_product {
+        font-size: 0.5rem;
+        top: 25px !important;
+        left: 0px !important;
+    }
+}
+
+footer small {
+    font-size: 0.6rem;
+    color: #8C1113;
+}
+
+.card_all .img {
+    position: absolute;
+}
+
+.type_product {
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
