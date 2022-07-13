@@ -6,20 +6,21 @@
 
 body {
     font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #e8e8e8;
 }
 
 :root {
-    --main: #8C1113;
-    --second: #ffe457;
+    --main:#14570f ;
+    --second: ;
 }
 
 nav {
-    background-color: #8C1113;
+    background-color:var(--main);
 }
 
 .login {
-    background: #FFE457;
-    color: #8C1113;
+    background: #13810f;
+    color: #fefefe;
 }
 
 .carousel {
@@ -86,4 +87,14 @@ footer small {
     position: relative;
     top: 30px;
     left: 10px;
+}
+.tell{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+@media screen  and (max-width: 600px) {
+    .tell{
+        font-size: 1.5rem;
+    }
 }
