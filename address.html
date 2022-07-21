@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dependencies/JQL.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dependencies/typeahead.bundle.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Arabic</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row pt-5 h-100 mx-auto">
+        <div class="col-12 p-3 card shadow-sm">
+          <div class="row m-0 p-0">
+            <div class="col-8 m-0 p-0">
+              <h2 class="m-0 p-0">ที่อยู่เพื่อจัดส่ง</h2>
+            </div>
+            <div class="col-4 m-0 p-0 d-flex justify-content-end">
+              <button class="btn btn-success">กลับไปหน้าแรก</button>
+            </div>
+          </div>
+          <div class="col-12 py-3">
+            <div class="form-outline mb-3 m-1">
+              <input
+                type="text"
+                id="form12"
+                class="form-control"
+                placeholder="เช่น นาย สั่งของ  สั่งดี"
+              />
+              <label class="form-label" for="form12">ชื่อ-นามสกุล</label>
+            </div>
+            <div class="form-outline mb-3 m-1">
+              <input
+                type="text"
+                id="form12"
+                class="form-control"
+                placeholder="เช่น 179/8 ถ.เดินดี"
+              />
+              <label class="form-label" for="form12">ที่อยู่บ้านเลขที่</label>
+            </div>
+            <div class="row m-0 p-0">
+              <div class="col-12 col-sm-6 p-1 mb-1">
+                <label for="sub_district" class="form-label">ตำบล</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sub_district"
+                    aria-describedby="basic-addon3"
+                    placeholder="กรุณาใส่ตำบล"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 p-1 mb-1">
+                <label for="district" class="form-label">อำเภอ</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="district"
+                    aria-describedby="basic-addon3"
+                    placeholder="กรุณาใส่อำเภอ"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 p-1 mb-1">
+                <label for="province" class="form-label">จังหวัด</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="province"
+                    aria-describedby="basic-addon3"
+                    placeholder="กรุณาใส่จังหวัด"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-1 p-1">
+                <label for="postcode" class="form-label"
+                  >รหัสไปรษณีย์
+                  <small class="text-success" hidden>เรียบร้อย</small></label
+                >
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="postcode"
+                    aria-describedby="basic-addon3"
+                    placeholder="กรุณาใส่รหัสไปรษณีย์"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-outline mb-3 m-1">
+              <input
+                type="text"
+                id="form12"
+                class="form-control"
+                placeholder="xxx-xxx-xxxx"
+              />
+              <label class="form-label" for="form12">เบอร์โทรติดต่อ</label>
+            </div>
+          </div>
+          <div class="row m-0 p-0">
+            <div class="col-12 col-sm-2 m-0 p-sm-0 p-0 py-3">
+              <button class="btn btn-success w-100 ">
+                <label class="form-label m-0 p-0 text-white" for="ad_img">
+                  <i class="fa-solid fa-camera"></i> แนบที่อยู่รูปภาพ
+                  (ถ้ามี)</label
+                >
+                <input
+                  type="file"
+                  id="ad_img"
+                  class="form-control"
+                  hidden
+                  onchange="loadFile(event)"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-sm-10 m-0 px-2 py-3">
+              <img id="output" class="w-100 m-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 py-2">
+        <div class="col-12 col-sm-6 m-0 p-0">
+          <a href="#" class="card p-3 m-1 text-start text-sm-center">
+            <h2 class="m-0 p-0 text-success">โอนชำระ</h2>
+            <small class="text-dark">จัดส่งภายใน 1-2 วันทำการ</small>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 m-0 p-0">
+          <a href="#" class="card p-3 m-1 text-start text-sm-center">
+            <h2 class="m-0 p-0 text-success">เก็บเงินปลายทาง</h2>
+            <small class="text-dark"
+              >จัดส่งภายใน 2-3 วันทำการ (จัดส่ง 3-4 ครั้ง อาทิตย์)</small
+            >
+          </a>
+        </div>
+      </div>
+      <div class="row m-0 py-3">
+        <div class="col-12 m-0 p-0">
+          <a href="./cart.html" class="btn btn-success py-3 w-100">
+            <h5 class="m-0 p-0">ยืนยันที่อยู่</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      $.Thailand({
+        $district: $("#sub_district"), // input ของตำบล
+        $amphoe: $("#district"), // input ของอำเภอ
+        $province: $("#province"), // input ของจังหวัด
+        $zipcode: $("#postcode"), // input ของรหัสไปรษณีย์
+      });
+    </script>
+
+    <script>
+      var loadFile = function (event) {
+        var reader = new FileReader();
+          reader.onload = function () {
+          var output = document.getElementById("output");
+          output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      };
+    </script>
+  </body>
+</html>
